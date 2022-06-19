@@ -1,7 +1,8 @@
-#This is recreation of a record store for React practice.
+# This is recreation of a record store for React practice.
 
-##Techstack
-###React
+## Techstack
+
+### React
 
 <ol>
 <li>Next.js</li>
