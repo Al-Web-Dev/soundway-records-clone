@@ -6,7 +6,9 @@ export default function Header() {
     <header className="container">
       <div className="bar" />
       <div className="sub-bar">
-        <Link href="/">Sound Records</Link>
+        <Link href="/">
+          <img alt="Header Logo" src="../public/static/header-logo.png" />
+        </Link>
         <Nav />
         Search
       </div>
