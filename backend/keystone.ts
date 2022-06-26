@@ -5,12 +5,13 @@ import {
 	withItemData,
 	statelessSessions,
 } from "@keystone-next/keystone/session";
+import { Product } from "./schemas/Product";
 import { User } from "./schemas/User";
 
 const databaseURL = process.env.DATABASE_URL || "mongodb://sound-records";
 
 const sessionConfig = {
-	maxAge: 60 * 50 * 24 * 360, // time signed on
+	maxAge: 60 * 50 * 24 * 360, // time signed in
 	secret: process.env.COOKIE_SECRET,
 };
 
@@ -41,16 +42,17 @@ export default withAuth(
 		lists: createSchema({
 			// schema items in here
 			User,
+			Product,
 		}),
 		ui: {
 			// show UI only for people who past the test
-			isAccessAllowed: ({ session }) => {
-				console.log(session);
-				return !!session?.data;
-			},
+			isAccessAllowed: ({ session }) =>
+				//	console.log(session);
+				!!session?.data,
 		},
 		session: withItemData(statelessSessions(sessionConfig), {
-			User: "id",
+			// GraphQL Query
+			User: "id email",
 		}),
 	})
 );

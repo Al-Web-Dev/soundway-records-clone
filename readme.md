@@ -24,7 +24,19 @@ Creating _app.js within pages directory creates a global component ie header.<br
 _document.js handes the info within the HTML tags head etc. 
 </p>
 <p>
-Header is a component rendered in Page.js
+Header is a component rendered in Page.js.
+</p>
+
+### Styled Components
+
+<p>
+Header.js uses `const Logo = styled.h1`
+  background: red;
+`;` <br>
+
+Global Styles - created within Page.js component.<br>
+Inner Styles - container max width, margin 0 auto etc
+
 </p>
 
 ## Backend:
@@ -32,5 +44,15 @@ Header is a component rendered in Page.js
 <ul>
 <li>Keystone.js - headless CMS to manage products using CRUD  Create Read Update Delete. Gives a graph QL API to query the DB ie 'query all items, name, price hit RUN'. Appollo makes the queries from Keystone and puts the data into Next.js App.</li>
 <li>Keystone.js is written in Node</li>
-<li>Ketstone is linked to MongoDb</li>
+<li>Keystone is linked to MongoDb</li>
 <ul>
+
+### Typescript
+
+<p>
+Keystone.ts file sets up connection to database. Runs on port 3000 to manager users.<br>
+Schema - description of data type these are in User.ts, these are passed to the keystone.js file.<br>
+Adding 'Auth' in keystone 'withAuth'. Takes in: User,email and password.<br>
+Schema items 'User' and 'Products' created in KS. <br>
+Product.js - creates fields: Name ie artist, Description text field, UI set to displayMode: "textarea". Status drop down 'availble..etc'
+</p>
