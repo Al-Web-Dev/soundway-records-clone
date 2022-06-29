@@ -39,6 +39,13 @@ Inner Styles - container max width, margin 0 auto etc
 
 </p>
 
+### Querying Products in GraphQL
+
+<p>
+Products.js (*remember start with a CAPITAL if a component*) in components dir uses GQL to query products in Keystone to render onto the FrontEnd. Product.js is for singular products and loops/maps each item.<br>
+Uses *ItemStyles* component to style each product input.
+</p>
+
 ## Backend:
 
 <ul>
@@ -55,4 +62,20 @@ Schema - description of data type these are in User.ts, these are passed to the 
 Adding 'Auth' in keystone 'withAuth'. Takes in: User,email and password.<br>
 Schema items 'User' and 'Products' created in KS. <br>
 Product.js - creates fields: Name ie artist, Description text field, UI set to displayMode: "textarea". Status drop down 'availble..etc'
+</p>
+
+### Cloudinary imager server
+
+<p>Images</p><br>
+In schemas ProductImages.ts
+
+### Seed Data
+
+<p>Seed data - pulls products from data.ts and updates the DB. 
+</p>
+
+### Apollo
+
+<p>
+
 </p>
