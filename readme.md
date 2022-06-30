@@ -42,7 +42,7 @@ Inner Styles - container max width, margin 0 auto etc
 ### Querying Products in GraphQL
 
 <p>
-Products.js (*remember start with a CAPITAL if a component*) in components dir uses GQL to query products in Keystone to render onto the FrontEnd. Product.js is for singular products and loops/maps each item.<br>
+Products.js (* remember start with a CAPITAL if a component *) in components dir uses GQL to query products in Keystone to render onto the FrontEnd. Product.js is for singular products and loops/maps each item.<br>
 Uses *ItemStyles* component to style each product input.
 </p>
 
