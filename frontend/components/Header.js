@@ -22,21 +22,24 @@ const HeaderStyles = styled.header`
   .bar {
     border-bottom: 1px solid var(--black, black);
     display: grid;
+    display: flex;
     grid-template-columns: auto 1;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
 `;
 
 export default function Header() {
   return (
-    <HeaderStyles className="container">
-      {/* <img alt="Header Logo" src="/public/static/header-logo.png" /> */}
-      <Logo>
-        <Link href="/">Sound Records</Link>
-      </Logo>
-      <Nav />
+    <HeaderStyles>
       <div className="bar">
+        <Logo>
+          <Link href="/">Sound Records</Link>
+        </Logo>
+        <Nav />
+      </div>
+
+      <div className="sub-bar">
         <p>Search</p>
       </div>
     </HeaderStyles>

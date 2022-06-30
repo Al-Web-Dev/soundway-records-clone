@@ -12,7 +12,7 @@ body {
   font-family: "Bitter",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 2;
 }
 
@@ -30,7 +30,7 @@ button {
 
 
 html {
-  --red: #ff000;
+  --red: #ff0000;
   --black:#393939;
   --grey: #3a3a3a;
   --lightGrey: #e1e1e1;
@@ -38,6 +38,7 @@ html {
   --maxWidth: 1000px;
   --bs: 0 12px 24px 0 rgba(0,0,0,0.09);
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *, *:before, *:after {
