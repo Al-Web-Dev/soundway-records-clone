@@ -43,7 +43,16 @@ Inner Styles - container max width, margin 0 auto etc
 
 <p>
 Products.js (*remember start with a CAPITAL if a component*) in components dir uses GQL to query products in Keystone to render onto the FrontEnd. Product.js is for singular products and loops/maps each item.<br>
-Uses *ItemStyles* component to style each product input.
+Uses * ItemStyles * component to style each product input.
+</p>
+<p>
+Money formatter created in lib>formatMoney.js.
+</p>
+
+### React forms
+
+<p>
+CreateProduct.js contains the form hooks using useForm.js function in the lib folder.
 </p>
 
 ## Backend:
