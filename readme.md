@@ -52,7 +52,8 @@ Money formatter created in lib>formatMoney.js.
 ### React forms
 
 <p>
-CreateProduct.js contains the form hooks using useForm.js function in the lib folder.
+CreateProduct.js contains the form hooks using useForm.js function in the lib folder.<br>
+RESET FORM - 
 </p>
 
 ## Backend:
