@@ -1,9 +1,14 @@
 import { useState } from 'react';
 
 export default function useForm(initial = {}) {
-  // create a state object for inputs
-
+  // create a state object for our inputs
   const [inputs, setInputs] = useState(initial);
+
+  // {
+  //   name: 'wes',
+  //   description: 'nice shoes',
+  //   price: 1000
+  // }
 
   function handleChange(e) {
     let { value, name, type } = e.target;
@@ -14,7 +19,7 @@ export default function useForm(initial = {}) {
       [value] = e.target.files;
     }
     setInputs({
-      // copy existing state
+      // copy the existing state
       ...inputs,
       [name]: value,
     });
@@ -31,7 +36,7 @@ export default function useForm(initial = {}) {
     setInputs(blankState);
   }
 
-  // return info wanted
+  // return the things we want to surface from this custom hook
   return {
     inputs,
     handleChange,
