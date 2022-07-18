@@ -34,9 +34,9 @@ const CREATE_PRODUCT_MUTATION = gql`
 export default function CreateProduct() {
   const { inputs, handleChange, clearForm, resetForm } = useForm({
     image: '',
-    name: 'Shoes for goats',
-    price: 30908,
-    description: 'cool shoes',
+    name: '',
+    price: 0,
+    description: '',
   });
 
   const [createProduct, { loading, error, data }] = useMutation(
@@ -50,11 +50,17 @@ export default function CreateProduct() {
   return (
     <div>
       <Form
+        // onSubmit={(e) => {
+        //   e.preventDefault();
+        //   createProduct();
+        //   console.log(inputs);
+        // }}
+
         onSubmit={async (e) => {
           e.preventDefault();
           // sunbmit input field to the backend:
           const res = await createProduct();
-          await createProduct();
+
           clearForm();
           // go to the product's page
           Router.push({
